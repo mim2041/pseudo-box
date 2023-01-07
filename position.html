@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .swimming div{
+            border: 1px dashed palevioletred;
+            width: 200px;
+        }
+        .swimming{
+            position: relative;
+        }
+        /* .ring{
+            position:absolute;
+            left: 30px;
+            top: 0px;
+        } */
+        .ring{
+            position:relative;
+            z-index: 1;
+        }
+        .water{
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>This is my header</h1>
+        <h1>I am learning position</h1>
+        <h2>I have heigher position</h2>
+    </section>
+    <section class="swimming">
+        <div class="swimming"><img src="images/react.png" alt=""></div>
+        <div><img class="ring" src="images/mongo.png" alt=""></div>
+        <div><img class="water" src="images/js.png" alt=""></div>
+    </section>
+</body>
+</html>
